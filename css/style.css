@@ -1,0 +1,130 @@
+* {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('../assets/mamun-srizon-qay3lNDSHzc-unsplash.jpg');
+    background-position: start;
+    background-size: 1500px 800px;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    /* height: 100vh;
+    width: 100%; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_mother {
+    background-color: transparent;
+
+    position: sticky;
+    top: 0px;
+}
+
+.custom-nav {
+    height: 80px;
+}
+
+.nav_mother_scroll {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.custom-nav div a {
+    margin: 0px 20px;
+    text-decoration: none;
+    color: white;
+
+    font-family: Hind Siliguri;
+}
+
+#home_section {
+    width: 80%;
+}
+
+.home-img img {
+    width: 95%;
+    border-radius: 50%;
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: #ff9900;
+    border: solid 1px #ff9900;
+    color: white;
+}
+
+
+
+
+
+
+
+/* PRODUCT IMG  */
+#product_section {
+    width: 80%;
+}
+.category_btn{
+    margin: 10px 20px;
+    cursor: pointer;
+}
+.category_btn:hover{
+    color: #ff9900;
+}
+.active_cat_btn{
+    color: #ff9900;
+    border-bottom: 1px solid #ff9900;
+}
+
+
+.product_category {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.single_product {
+    border: 1px solid #ff9900;
+    border-radius: 8px;
+}
+
+
+
+
+#benifits_section {
+    width: 80%;
+}
+
+
+
+
+#award_section{
+    width: 80%;
+}
+.award_single_product{
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    border:1px solid rgba(128, 128, 128, 0.1);
+    border-radius: 8px;
+}
+.award_category{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: start;
+}
+
+
+
+
+
+.footer_content{
+    display: flex;
+}
