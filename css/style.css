@@ -22,7 +22,7 @@
 body {
     background: url('../assets/mamun-srizon-qay3lNDSHzc-unsplash.jpg');
     background-position: start;
-    background-size: 100% 800px;
+    background-size: 100% 120vh;
     /* background-size: cover; */
     background-repeat: no-repeat;
     /* height: 100vh;
@@ -36,7 +36,7 @@ body {
 
 @media screen and (max-width:686px) {
     body {
-        background-size: 220% 700px;
+        background-size: 220% 100vh;
     }
 }
 
@@ -203,6 +203,9 @@ button {
     .home_heading_second {
         font-size: 60px;
     }
+    .see_more_btn{
+        display: none;
+    }
 
 }
 
@@ -225,6 +228,7 @@ button {
 /* PRODUCT IMG  */
 #product_section {
     width: 80%;
+    /* background-color: white; */
 }
 
 .product-heading {
