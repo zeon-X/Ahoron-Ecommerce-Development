@@ -98,9 +98,20 @@ button {
 
 
 
+
+
+
+
+
 #benifits_section {
     width: 80%;
 }
+
+
+
+
+
+
 
 
 
@@ -109,7 +120,7 @@ button {
     width: 80%;
 }
 .award_single_product{
-    height: 420px;
+    /* height: 420px; */
     background-color: rgba(0, 0, 0, 0.8); 
     border:1px solid rgba(128, 128, 128, 0.1);
     border-radius: 8px;
@@ -125,6 +136,19 @@ button {
 
 
 
+#blog_section{
+    width: 80%;
+}
+
+
+
+
 .footer_content{
     display: flex;
+}
+.blog_items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: start;
 }
