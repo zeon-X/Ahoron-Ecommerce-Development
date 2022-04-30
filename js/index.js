@@ -10,6 +10,16 @@ window.addEventListener('scroll', () => {
 
 
 
+document.querySelector('.nav_open_btn').addEventListener('click',()=>{
+    document.querySelector('.custom_nav_links_sm').classList.add('d-flex');
+})
+document.querySelector('.nav_close_btn').addEventListener('click',()=>{
+    document.querySelector('.custom_nav_links_sm').classList.remove('d-flex');
+})
+
+
+
+
 const catHandler = (id) => {
 
     document.getElementById(`cat_${id}`).classList.remove('d-none');

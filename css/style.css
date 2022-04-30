@@ -5,10 +5,24 @@
     padding: 0;
 }
 
+.big_title {
+    font-size: 100px;
+    font-weight: 700;
+    color: #ff9900;
+    font-family: Hind Siliguri;
+    line-height: 100px;
+}
+
+@media screen and (max-width:686px) {
+    .big_title {
+        font-size: 65px;
+    }
+}
+
 body {
     background: url('../assets/mamun-srizon-qay3lNDSHzc-unsplash.jpg');
     background-position: start;
-    background-size: 1500px 800px;
+    background-size: 100% 800px;
     /* background-size: cover; */
     background-repeat: no-repeat;
     /* height: 100vh;
@@ -20,6 +34,24 @@ body {
     align-items: center;
 }
 
+@media screen and (max-width:686px) {
+    body {
+        background-size: 220% 700px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #nav_mother {
     background-color: transparent;
 
@@ -29,6 +61,26 @@ body {
 
 .custom-nav {
     height: 80px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom_nav_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_open_btn,
+.nav_close_btn {
+    display: none;
+    height: 30px;
+    color: #ff9900;
+}
+.nav_logo{
+    display: none;
 }
 
 .nav_mother_scroll {
@@ -43,13 +95,84 @@ body {
     font-family: Hind Siliguri;
 }
 
+@media screen and (max-width:686px) {
+    .custom-nav {
+        justify-content: space-between;
+    }
+    .custom_nav_links {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .custom_nav_links_sm {
+        display: none;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 0.9) ;
+        height: 105vh;
+        width: 70%;
+    }
+
+    .nav_open_btn,.nav_logo {
+        display: block;
+    }
+    .nav_close_btn{
+        display: flex;
+        margin: 90px 0px;
+    }
+    .custom-nav div a {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #home_section {
     width: 80%;
 }
 
-.home-img img {
+.home_heading {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.home_content {
+    width: 50%;
+}
+
+.home_heading_first {
+    font-size: 120px;
+    font-weight: 700;
+    color: white;
+    font-family: Hind Siliguri;
+    line-height: 100px;
+}
+
+.home_heading_second {
+    font-size: 100px;
+    font-weight: 700;
+    color: white;
+    font-family: Hind Siliguri;
+    line-height: 100px;
+}
+
+.home_content img {
     width: 95%;
-    border-radius: 50%;
 }
 
 button {
@@ -59,6 +182,39 @@ button {
     border: solid 1px #ff9900;
     color: white;
 }
+
+@media screen and (max-width:986px) {
+    .home_container {
+        flex-direction: column-reverse;
+    }
+
+    .home_heading {
+        width: 100%;
+    }
+
+    .home_content {
+        width: 0%;
+    }
+
+    .home_heading_first {
+        font-size: 80px;
+    }
+
+    .home_heading_second {
+        font-size: 70px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -70,18 +226,28 @@ button {
 #product_section {
     width: 80%;
 }
-.category_btn{
+
+.product-heading {
+    width: 40%;
+}
+
+.product_content {
+    width: 60%;
+}
+
+.category_btn {
     margin: 10px 20px;
     cursor: pointer;
 }
-.category_btn:hover{
+
+.category_btn:hover {
     color: #ff9900;
 }
-.active_cat_btn{
+
+.active_cat_btn {
     color: #ff9900;
     border-bottom: 1px solid #ff9900;
 }
-
 
 .product_category {
     display: grid;
@@ -95,6 +261,36 @@ button {
     border-radius: 8px;
 }
 
+@media screen and (max-width:686px) {
+    #product_section {
+        flex-direction: column;
+    }
+
+    .product-heading {
+        width: 100%;
+    }
+
+    .product_content {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .category_btn {
+        margin: 10px 12px;
+    }
+
+    .product_category {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -107,6 +303,36 @@ button {
     width: 80%;
 }
 
+.benifit_content {
+    width: 60%;
+}
+
+.benifit_heading {
+    width: 40%;
+}
+
+/* .benifit_heading_title {
+    font-size: 95px;
+    font-weight: 700;
+    color: #ff9900;
+    font-family: Hind Siliguri;
+    line-height: 100px;
+} */
+
+@media screen and (max-width:686px) {
+    #benifits_section {
+        flex-direction: column;
+    }
+
+    .benifit_content {
+        width: 100%;
+    }
+
+    .benifit_heading {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
 
 
 
@@ -116,16 +342,39 @@ button {
 
 
 
-#award_section{
+
+
+
+
+
+#award_section {
     width: 80%;
 }
-.award_single_product{
+
+.award_heading {
+    width: 40%;
+}
+
+.award_content {
+    width: 60%;
+}
+
+/* .award_heading_title {
+    font-weight: 700;
+    font-size: 95px;
+    color: #ff9900;
+    font-family: Hind Siliguri;
+    line-height: 100px;
+} */
+
+.award_single_product {
     /* height: 420px; */
-    background-color: rgba(0, 0, 0, 0.8); 
-    border:1px solid rgba(128, 128, 128, 0.1);
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(128, 128, 128, 0.1);
     border-radius: 8px;
 }
-.award_category{
+
+.award_category {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -133,22 +382,105 @@ button {
 }
 
 
+@media screen and (max-width:686px) {
+    #award_section {
+        flex-direction: column;
+    }
+
+    .award_heading {
+        width: 100%;
+    }
+
+    .award_content {
+        width: 100%;
+    }
+
+    .award_category {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 
 
-#blog_section{
+
+
+
+
+
+
+#blog_section {
     width: 80%;
 }
 
-
-
-
-.footer_content{
-    display: flex;
-}
-.blog_items{
+.blog_items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: start;
+    width: 100%;
+}
+
+@media screen and (max-width:686px) {
+    .blog_items {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+@media screen and (min-width:687px) and (max-width:1199px) {
+    .blog_items {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer_content {
+    display: flex;
+}
+
+.footer_content_section {
+    width: 60%;
+}
+
+.dev_section {
+    width: 40%;
+    align-items: flex-end;
+}
+
+
+@media screen and (max-width:686px) {
+    .footer_content {
+        flex-direction: column;
+    }
+
+    .niharon_logo {
+        width: 100%;
+        align-items: left;
+    }
+
+    .dev_section {
+        margin-top: 30px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .footer_content_section {
+        width: 100%;
+    }
 }
